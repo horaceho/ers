@@ -1,0 +1,19 @@
+{
+    "name": "horaceho/ers",
+    "description": "EGF Rating System",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "HoraceHo\\Ers\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Horace Ho"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    }
+}
