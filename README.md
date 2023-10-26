@@ -16,6 +16,30 @@ The rating algorithm was updated starting 2021. The whole database from back in 
 
 [EGF Official ratings system](https://www.europeangodatabase.eu/EGD/EGF_rating_system.php)
 
+## Usage
+``` bash
+composer require horaceho/ers
+```
+
+``` php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use HoraceHo\Ers;
+
+$ers = new Ers\Ers();
+
+$player = 2100.0;
+$opponent = 2100.0;
+$win = 1.0;
+$loss = 0.0;
+
+$win_update = $ers->update($player, $opponent, $win);
+assert ($win_update == 2109.306);
+echo $win_update . PHP_EOL;
+```
+
 ## Test
 ``` bash
 git clone git@github.com:horaceho/ers.git
