@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "HoraceHo\\Ers\\": "src/"
+            "Horaceho\\Ers\\": "src/"
         }
     },
     "authors": [

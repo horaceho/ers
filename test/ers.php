@@ -8,7 +8,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use HoraceHo\Ers;
+use Horaceho\Ers;
 
 $ers = new Ers\Ers();
 

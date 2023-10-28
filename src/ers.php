@@ -1,6 +1,6 @@
 <?php
 
-namespace HoraceHo\Ers;
+namespace Horaceho\Ers;
 
 /**
  * Ratings are updated by: r' = r + con * (Sa - Se) + bonus
