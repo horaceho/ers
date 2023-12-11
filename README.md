@@ -49,6 +49,6 @@ echo $win_update . PHP_EOL;
 ``` bash
 git clone git@github.com:horaceho/ers.git
 cd ers
-php test/ers.php 
-php test/about.php 
+php test/ers.php
+php test/about.php
 ```

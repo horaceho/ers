@@ -35,8 +35,9 @@ class Ers
         $result,
         $con_div = 200.0,
         $con_pow = 1.6,
+        $con_mul = 1.0,
     ) {
-        $con = $this->con($player, $con_div, $con_pow);
+        $con = $this->con($player, $con_div, $con_pow, $con_mul);
         $sa = $result;
         $se = $this->expect($player, $opponent);
         $bonus = $this->bonus($player);
@@ -52,9 +53,9 @@ class Ers
      * @param  float  $rating
      * @return float
      */
-    public function con($rating, $div = 200.0, $pow = 1.6)
+    public function con($rating, $div = 200.0, $pow = 1.6, $mul = 1.0)
     {
-        $con = pow(((3300.0 - $rating) / $div), $pow);
+        $con = pow(((3300.0 - $rating) / $div), $pow) * $mul;
         return $con;
     }
 
